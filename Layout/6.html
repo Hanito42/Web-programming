@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+<body>
+<div class="coloumn">
+    <div class="row">
+        <div class="block" style="align-items: flex-end; justify-content: flex-end;">
+            <div class= "icon">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+        </div>
+        <div class="block" style="align-items: flex-end; flex-direction: column; justify-content: center; gap: 25px;">
+            <div class= "icon">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class= "icon">
+                <i class="fas fa-2x fa-kiwi-bird"></i>
+            </div>
+        </div>
+        <div class="block" style="align-items: flex-start; flex-direction: column; justify-content: center; gap: 40px;">
+            <div class= "icon">
+                <i class="fas fa-2x fa-cat"></i>
+            </div>
+            <div class= "icon">
+                <i class="fas fa-2x fa-kiwi-bird"></i>
+            </div>
+        </div>
+        <div class="block" style="justify-content: flex-end; align-items: flex-start;">
+            <div class="icon"><i class="fas fa-2x fa-dog"></i></div>
+            <div class="icon"><i class="fas fa-2x fa-cat"></i></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="block" style="flex-direction: column; justify-content: center; align-items: flex-end;">
+            <div class="icon"><i class="fas fa-2x fa-dog"></i></div>
+            <div class="icon"><i class="fas fa-2x fa-kiwi-bird"></i></div>
+            <div class="icon"><i class="fas fa-2x fa-cat"></i></div>
+        </div>
+        <div class="rectangle" style="flex-direction: column; align-items: center; justify-content: center;">
+            <div class="icon"><i class="fas fa-2x fa-dog"></i></div>
+            <div class="icon"><i class="fas fa-2x fa-cat"></i></div>
+        </div>
+        <div class="block" style="justify-content: flex-start; align-items: flex-start;">
+            <div class="icon"><i class="fas fa-2x fa-dog"></i></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="block" style="justify-content: flex-end; align-items: flex-start;">
+            <div class="icon"><i class="fas fa-2x fa-dog"></i></div>
+        </div>
+        <div class="block" style="flex-direction: column;">
+            <div class="icon"><i class="fas fa-2x fa-dog"></i></div>
+            <div class="icon"><i class="fas fa-2x fa-cat"></i></div>
+        </div>
+        <div class="block">
+            <div class="icon" style="flex-grow: 1;"><i class="fas fa-2x fa-dog"></i></div>
+            <div class="icon" style="flex-grow: 1;"><i class="fas fa-2x fa-cat"></i></div>
+            <div class="icon" style="flex-grow: 1;"><i class="fas fa-2x fa-dog"></i></div>
+        </div>
+        <div class="block" style="justify-content: center; gap: 50px">
+            <div class="icon"><i class="fas fa-2x fa-cat"></i></div>
+            <div class="icon"><i class="fas fa-2x fa-kiwi-bird"></i></div>
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    .block {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        padding: 0.5em;
+        margin: 0.5em;
+        box-sizing: border-box;
+        /* align-items: flex-end;
+        justify-content: flex-end; */
+        display: flex;
+        flex-direction: column;
+    }
+    .row {
+        display: flex;
+    }
+    .rectangle {
+        width: 432px;
+        height: 200px;
+        background-color: yellow;
+        padding: 0.5em;
+        margin: 0.5em;
+        display: flex;
+    }
+    .icon {
+        /* display: flex; */
+        /* justify-content: ; */
+        border: 1px solid black;
+        margin: 0.25em;
+        padding: 0.5em;
+    }
+</style>
+</html>

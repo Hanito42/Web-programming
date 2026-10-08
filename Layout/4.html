@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class = "paragraph1 bordered">
+    The <span class = "adjective bordered">morning</span> <span class = "proper_name" style="background: red;">sun</span> rises slowly over the <span class = "adjective bordered">quiet green</span> hills. 
+    A <span class = "adjective bordered">cool</span> mist covers the <span class = "adjective bordered">soft</span> grass and whispers through the <span class = "adjective bordered">tall</span> pine trees. 
+    The world feels completely still and full of quiet promise.
+</div>
+    
+<div class = "paragraph2 bordered">
+    A <span class = "adjective bordered">small red fox</span> steps softly from the edge of the dark forest. 
+    It sniffs the <span class = "adjective bordered">damp</span> air and looks around with <span class = "adjective bordered">bright, curious</span> eyes. 
+    Then, it trots quickly toward the <span class = "adjective bordered">bright</span> stream to drink.
+</div>
+    
+<div class ="paragraph3 bordered">
+    The <span class = "adjective bordered">gentle</span> sound of flowing water fills the calm <span class = "adjective bordered">morning</span> air. 
+    Soon, <span class = "adjective bordered">little</span> songbirds wake up and begin to sing their <span class = "adjective bordered">sweet daily</span> tunes. 
+    A new day has truly and peacefully begun.
+</div>
+</body>
+<style>
+    .adjective {
+        background: yellowgreen;
+        border: 2px dashed black;
+        display: inline-block; /* we already know this, just so that the adjectives are like blocks */
+        margin: 2px; /* margins on all sides */
+        padding: 0 4px; /* margins inside the border */
+        border-radius: 8px; /* round the borders */
+        box-shadow: 0 0 8px grey;
+    }
+    .adjective.bordered {
+        margin: 16 px 0;
+        border-width: 10px;
+    }
+    .adjective:hover {
+        background: skyblue;
+        cursor: pointer;
+        border-width: 4px; /* change the border width, but you can only specify the width */
+        padding: 6px; /* change the padding from the border */
+        box-shadow: 9 9 30px white; /* make the shadow white and larger, creating the illusion of glow */
+    }
+    .paragraph1 {
+        width: 300px; background: #00ff40; 
+        text-align: center; 
+        /* margin: 8px 0; 
+        padding: 8px 16px; 
+        border: 1px solid black; */
+    }
+    .paragraph1.bordered {
+        margin: 8px 0; 
+        padding: 8px 16px; 
+        border: 10px solid black;
+    }
+    .paragraph2 {
+        width: 300px;
+        background: linear-gradient(90deg, #ff0080, #0004ff); 
+        text-align: right; 
+        /* margin: 8px 0; 
+        padding: 8px 16px; 
+        border: 1px solid black; */
+    }
+    .paragraph2.bordered {
+        margin: 8px 0; 
+        padding: 8px 16px; 
+        border: 10px dashed black;
+    }
+    .paragraph2 .adjective {
+        background: white;
+    }
+    .paragraph2 .adjective:hover {
+        background: skyblue;
+    }
+    .paragraph3 {
+        width: 300px; 
+        background: #a6ff00; 
+        text-align: left; 
+        /* margin: 8px 0; 
+        padding: 8px 16px; 
+        border: 1px solid black; */
+    }
+    .paragraph3.bordered {
+        margin: 8px 0; 
+        padding: 8px 16px; 
+        border: 10px solid black;
+    }
+    .paragraph3 .adjective {
+        background: #ff26ed;
+    }
+    .paragraph3 .adjective:hover {
+        background: skyblue;
+    }
+    .proper_name {
+        display: inline-block; 
+        padding: 8px;
+    }
+</style>
+</html>
