@@ -11,42 +11,33 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href=""#><img source="images/icon.png" alt=""></a>
+            <a class="navbar-brand" href=""#><img src="/images/icon.png" alt="" style="width: 40px; height: 40px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/"#>xx</a>
+                <a class="nav-link active" aria-current="page" href="/"#>Snap back</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/common"#>Обыкновенные</a>
+                <a class="nav-link" href="/SpaceMarine"#>Space Marine</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/epic"#>Эпичные</a>
+                <a class="nav-link" href="/Astra"#>Astra Militarum</a>
                 </li>
-                <!-- <li class="nav-item">
-                <a class="nav-link disabled" href=""# tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
             </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-    <?php 
-    $url = $_SERVER["REQUEST_URI"];
+    <div class="container" style="padding-top: 30px">
+        <?php 
+            $url = $_SERVER["REQUEST_URI"];
 
-    echo "You are on the page: $url, please be careful!<br>";
-
-    if ($url == "/") {
-        require "../views/main.php";
-    } elseif ($url == "/common") {
-        require "../views/common.php";
-    } elseif ($url == "/epic") {
-        require "../views/epic.php";
-    } 
-    ?>
+            if ($url === "/") {require "../views/main.php";}
+            elseif (preg_match("#^/SpaceMarine#", $url)) {require "../views/SpaceMarine/main.php";}
+            elseif (preg_match("#^/Astra#", $url)) {require "../views/AstraMilitarium/main.php";}
+        ?>
     </div>
 </body>
 </html>
