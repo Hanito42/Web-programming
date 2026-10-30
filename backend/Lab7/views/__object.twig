@@ -1,0 +1,16 @@
+{% extends "__layout.twig" %}
+
+{% block content %}
+<div class="container" style="padding-top: 30px">
+    <text>{{ text }}</text>
+    <ul class="nav nav-pills">
+        <li class = nav-item>
+            <a class="nav-link {{is_image ? "active" : ''}}" href="/{{upper_path}}/image">Image</a>
+        </li>
+        <li class = nav-item>
+            <a class="nav-link {{is_description ? "active" : ''}}" href="/{{upper_path}}/description">Description</a>
+        </li>
+    </ul>
+</div>
+{% block objectContent %}{% endblock %}
+{% endblock %}
